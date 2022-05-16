@@ -16,18 +16,22 @@ isHeistOn := true
 if eludedGuards >= 50 && isHeistOn {
   fmt.Println("Looks like you've managed to make it past the guards. Good job, but remember, this is the first step.")
   fmt.Println("isHeistOn is currently:", isHeistOn)
+  fmt.Println("********************************")
   } else {
     isHeistOn = false
     fmt.Println("Plan a better disguise next time?")
     fmt.Println("isHeistOn is currently:", isHeistOn)
+    fmt.Println("********************************")
   }
   var openedVault = rand.Intn(100)
   if isHeistOn && openedVault >= 70 {
     fmt.Println("Is open! Grab and GO!")
+    fmt.Println("********************************")
 } else if isHeistOn {
     isHeistOn = false
     fmt.Println("The vault can’t be opened")
   fmt.Println("isHeistOn is currently:", isHeistOn)
+  fmt.Println("********************************")
   }
   if isHeistOn && openedVault >= 70 {
   var leftSafely = rand.Intn(5)
@@ -53,6 +57,7 @@ if eludedGuards >= 50 && isHeistOn {
      if isHeistOn {
         var amtStolen = 10000 + rand.Intn(1000000)
         fmt.Println("We have $", amtStolen)
+        fmt.Println("********************************")
     }
     fmt.Println(" Heist is currently: ", isHeistOn)
 }
