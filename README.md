@@ -1,1 +1,1 @@
-# main-go-lessons-first-language
+# Go - My First Lessons ;)
