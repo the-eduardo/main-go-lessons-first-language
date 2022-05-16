@@ -34,13 +34,13 @@ if eludedGuards >= 50 && isHeistOn {
   switch leftSafely {
         case 0:
         isHeistOn = false;
-        fmt.Print("Looks like you tripped an alarm... run?   #")
+        fmt.Println("Looks like you tripped an alarm... run?   #")
         case 1:
         isHeistOn = false
-        fmt.Print("Turns out vault doors don't open from the inside...")
+        fmt.Println("Turns out vault doors don't open from the inside...")
         case 2:
         isHeistOn = false
-        fmt.Print("When did they start raising dogs in vaults??")
+        fmt.Println("When did they start raising dogs in vaults??")
         case 3:
         fmt.Println("We are out! Move!")
         default:
