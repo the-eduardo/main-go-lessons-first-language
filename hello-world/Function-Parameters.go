@@ -8,7 +8,7 @@ func multiplier(x, y int32) int32 {
 }
 // --------------------------- MARS YEARS ---------------------------
 func computeMarsYears(earthYears int) int {
-  //Computing the value from earth "myAge", thats aewsome!
+  //Computing the value from earth "myAge", that's aewsome!
 
   earthDays := earthYears * 365
   marsYears := earthDays / 687
