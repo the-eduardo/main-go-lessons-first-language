@@ -49,5 +49,5 @@ func main() {
   c = specialComputation(c)
   d = specialComputation(d)
 
-  fmt.Println(a, b, c, d)
+fmt.Println(a, b, c, d)
 }
