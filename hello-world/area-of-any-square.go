@@ -7,6 +7,7 @@ import ("fmt")
 
   func main () {
     var x float64
+    var abc string
 
     fmt.Printf("Please enter content:")
     fmt.Scan(&x)
