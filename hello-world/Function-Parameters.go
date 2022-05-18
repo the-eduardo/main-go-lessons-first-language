@@ -16,12 +16,11 @@ func computeMarsYears(earthYears int) int {
 }
 //--------------------------- MAIN ---------------------------
 func main() {
-  var product int32
+  var product, main1, main2, newProduct int32
   product = multiplier(25, 4)
   fmt.Println(product) // prints 100
 fmt.Println("****************")
 
-  var main1, main2, newProduct int32
   main1 = 6
   main2 = 7
   newProduct = multiplier(main1, main2)

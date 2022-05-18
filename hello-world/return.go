@@ -23,19 +23,16 @@ import ("fmt"
       }
 
 func getLengthOfCentralPark() int32 {
-  var lengthInBlocks int32
-  lengthInBlocks = 51
+  var lengthInBlocks int32 = 51
   return lengthInBlocks
 }
 
 func main() {
-  var centralParkLength int32
-  centralParkLength = getLengthOfCentralPark()
+  var centralParkLength int32 = getLengthOfCentralPark()
   fmt.Println(centralParkLength, "Is the Length Of Central Park") // Prints: 51
   fmt.Println("********************************")
 
-  var nyLate string
-  nyLate = isItLateInNewYork()
+  var nyLate string = isItLateInNewYork()
   fmt.Println(nyLate)
 
 }

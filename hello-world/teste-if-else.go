@@ -3,8 +3,7 @@ import "fmt"
 import "time"
 
   func main() {
-  var x string
-  x = "teste"
+  var x string = "teste"
   fmt.Println(x, time.Now())
 
   var yy string
