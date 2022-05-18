@@ -19,7 +19,7 @@ func main() {
   } else {
     fmt.Println("Where did all my money go?")
   }
-		fmt.Println(rand.Seed)
+		fmt.Println(time.Now().UnixNano())
 
 
   if lessonLearned := true; lessonLearned {
