@@ -28,4 +28,6 @@ func main() {
 	var f float64 = math.Sqrt(float64(x*x + y*y))
 	z := uint(f)
 	fmt.Println(x, y, z)
+  fmt.Printf("Tipos %T x, %T y, %T z Valores: %v %v %v", x, y, z, x, y, z)
+
 }
