@@ -25,9 +25,11 @@ import (
 
 func main() {
 	var x, y int = 3, 4
-	var f float64 = math.Sqrt(float64(x*x + y*y))
-	z := uint(f)
+	var f float64 = math.Sqrt(float64(x*x + y*y)) //f aqui é float64
+	z := uint(f) // Var f é float64 porém var Z é uint
 	fmt.Println(x, y, z)
-  fmt.Printf("Tipos %T x, %T y, %T z Valores: %v %v %v", x, y, z, x, y, z)
+  fmt.Printf("Tipos %T f %T x, %T y, %T z Valores: %v %v %v %v", f, x, y, z, f, x, y, z)
 
+  // print: Tipos float64 f int x, int y, uint z Valores: 5 3 4 5
+  //                                       ^^^^^
 }
