@@ -18,13 +18,36 @@ func fizz(num int) {
 
 func main() {
 
-	n := 1         // the init statement: executed ***before the first iteration***
-	for n <= 100 { // the ***condition*** expression: evaluated before every iteration
+	n := 1
+	for n <= 100 {
 		fizz(n)
-		n += 1 // the post statement: ***executed*** at the end of every iteration
+		n += 1
 	}
-
+	fmt.Println("****************")
+second()
 }
+
+
+func second() {
+	sum := 0
+	for i := 0; i <= 10; i++ {
+		sum += i
+		fmt.Println(sum)
+	}
+	fmt.Println("^ final")
+	forContinued()
+}
+
+
+func forContinued() {
+	sum := 1
+	for ; sum < 1025; { // The init and post statements are optional.
+		sum += sum
+	}
+	fmt.Println(sum)
+}
+
+
 
 /*-------------- For
 	Go has only one looping construct, the for loop.
