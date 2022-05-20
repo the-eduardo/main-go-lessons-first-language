@@ -19,9 +19,9 @@ func fizz(num int) {
 func main() {
 
 	n := 1
-	for n < 99 {
+	for n < 101 {
 		fizz(n)
-		n += 2
+		n += 1
 	}
 
 }
