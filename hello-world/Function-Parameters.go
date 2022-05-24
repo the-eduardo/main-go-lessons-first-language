@@ -27,7 +27,8 @@ fmt.Println("****************")
   fmt.Println(newProduct) // prints 42
   //--------------------------- Main Mars ---------------------------
 fmt.Println("****************")
-  myAge := 22
+  var myAge int  
+  fmt.Scanf("%d", &myAge)
 
 // Call marsYear with myAge
 myMartianAge := computeMarsYears(myAge)
