@@ -6,7 +6,7 @@ func main() {
   s := "hello world!"
   sb := []byte(s)
   for _, v := range sb {
-    fmt.Printf("%v | %T | %#U | %#x\n", v, v, v, v)
+    fmt.Printf("%v | %b | %T | %#U | %#x\n", v, v, v, v, v)
   }
   a := 700000000008745
   fmt.Printf("\n\n\n %d \t %b \t %#x", a ,a ,a )
