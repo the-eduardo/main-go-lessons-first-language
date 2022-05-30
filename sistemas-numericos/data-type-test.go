@@ -8,7 +8,7 @@ func main() {
   for _, v := range sb {
     fmt.Printf("%v | %b | %T | %#U | %#x\n", v, v, v, v, v)
   }
-  a := 700000000008745
+  a := 78745
   fmt.Printf("\n\n\n %d \t %b \t %#x", a ,a ,a )
   fmt.Println("\n", runtime.GOOS, "|", runtime.GOARCH)
 }

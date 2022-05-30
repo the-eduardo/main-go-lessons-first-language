@@ -26,11 +26,11 @@ func SoSayethThe(character Stereotype) string {
 }
 
 
-type ByteSize float64
+//type ByteSize float64
 
 const (
     _           = iota                   // ignore first value by assigning to blank identifier
-    KB ByteSize = 1 << (iota * 10) // 1 << (1 * 10)
+    KB = 1 << (iota * 10) // 1 << (1 * 10)
     MB                                   // 1 << (10*2)
     GB                                   // 1 << (10*3)
     TB                                   // 1 << (10*4)
@@ -53,10 +53,10 @@ func bsize() {
   fmt.Printf("%v\n", PB)
   fmt.Printf("%b\t", EB)
   fmt.Printf("%v\n", EB)
-  fmt.Printf("%b\t", ZB)
-  fmt.Printf("%v\n", ZB)
-  fmt.Printf("%b\t", YB)
-  fmt.Printf("%v\n", YB)
+/*  fmt.Printf("%b\t", ZB) (overflows)  
+  fmt.Printf("%v\n", ZB)   (overflows)
+  fmt.Printf("%b\t", YB)   (overflows)
+  fmt.Printf("%v\n", YB)   (overflows) */
 }
 
 
