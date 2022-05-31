@@ -6,15 +6,20 @@
 package main
 import "fmt"
 func main() {
+  o, e := 0, 0
   var sum uint64
   fmt.Scan(&sum)
 	for ; sum > 1; {
 		if sum&1 != 0 {
+      o++
 			sum = sum*3 + 1
 			fmt.Printf("%v = ODD\n", sum)
 		} else {
+      e++;
 			sum = sum / 2
 			fmt.Printf("%v = EVEN\n", sum)
 		}
 	}
+  fmt.Printf("\n Evens: %v | Odds: %v | Total: (%v)", e, o, e+o)
+
 }
