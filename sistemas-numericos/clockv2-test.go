@@ -6,5 +6,5 @@ func main() {
 			for s := 0; s < 60; {
 				s++
 				{
-					fmt.Println(h, m, s)
+					fmt.Printf("%vh%vm%vs\n", h, m, s)
 				}}}}}
