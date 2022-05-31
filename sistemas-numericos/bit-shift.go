@@ -30,5 +30,5 @@ func bitShift(){ // working bitShift
   aa := 24
   bb := aa << 2
   cc := aa >> 2
-  fmt.Printf("\n %b \n %b \n %b\n", aa, bb, cc)
+  fmt.Printf("\n %v | %b \n %v | %b \n %v  | %b\n", aa, aa, bb, bb, cc, cc)
 }
