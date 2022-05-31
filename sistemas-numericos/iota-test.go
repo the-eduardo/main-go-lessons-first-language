@@ -53,7 +53,7 @@ func bsize() {
   fmt.Printf("%v\n", PB)
   fmt.Printf("%b\t", EB)
   fmt.Printf("%v\n", EB)
-/*  fmt.Printf("%b\t", ZB) (overflows)  
+/*  fmt.Printf("%b\t", ZB) (overflows)
   fmt.Printf("%v\n", ZB)   (overflows)
   fmt.Printf("%b\t", YB)   (overflows)
   fmt.Printf("%v\n", YB)   (overflows) */
@@ -66,5 +66,17 @@ func main() {
     fmt.Println(SoSayethThe(1))
     fmt.Println("----------------------------------------------")
     bsize()
+    fmt.Println("----------------------------------------------")
+    years()
 
+
+}
+const ( //2022 | 2023 | 2024 | 2025
+    Y  = iota + 2022
+    YY
+    YYY
+    YYYY
+    )
+func years() {
+  fmt.Printf("\tIota Years:\n\t%v | %v | %v | %v", Y, YY, YYY, YYYY)
 }
