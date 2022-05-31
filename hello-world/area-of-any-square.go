@@ -1,17 +1,20 @@
 package main
-import ("fmt")
 
-  func square(x, y float64) (float64, float64){
-    return (x*x), (y*4)
-  }
+import (
+	"fmt"
+)
 
-  func main () {
-    var x float64
+func square(x, y float64) (float64, float64) {
+	return (x * x), (y * 4)
+}
 
-    fmt.Printf("Please enter content:")
-    fmt.Scan(&x)
-    y := x
-    area, perimetro := square(x, y)
-    fmt.Print("Your has square area is ", area, " meters\n", "And has a perimeter of ", perimetro, " meters")
+func main() {
+	var x float64
 
-  }
+	fmt.Printf("Please enter content:")
+	fmt.Scan(&x)
+	y := x
+	area, perimetro := square(x, y)
+	fmt.Print("Your has square area is ", area, " meters\n", "And has a perimeter of ", perimetro, " meters")
+
+}

@@ -7,34 +7,34 @@ This is useful for logging, file writing, and other utilities.
 */
 
 package main
+
 import "fmt"
 
 func calculateTaxes(revenue, deductions, credits float64) float64 {
-  defer fmt.Println("Taxes Calculated!") //!important
-  taxRate := .06143
-  fmt.Println("Calculating Taxes...")
+	defer fmt.Println("Taxes Calculated!") //!important
+	taxRate := .06143
+	fmt.Println("Calculating Taxes...")
 
-  if deductions == 0 || credits == 0 {
-    return revenue * taxRate
-  }
+	if deductions == 0 || credits == 0 {
+		return revenue * taxRate
+	}
 
-
-  taxValue := (revenue - (deductions * credits)) * taxRate
-  if taxValue >= 0 {
-    return taxValue
-  } else {
-    return 0
-  }
+	taxValue := (revenue - (deductions * credits)) * taxRate
+	if taxValue >= 0 {
+		return taxValue
+	} else {
+		return 0
+	}
 }
 
 func main() {
-  var rev, ded, cre float64
-  rev = 100000
-  ded = 100
-  cre = 100
-  var final float64
-   final = calculateTaxes(rev, ded, cre)
-  fmt.Println(final)
+	var rev, ded, cre float64
+	rev = 100000
+	ded = 100
+	cre = 100
+	var final float64
+	final = calculateTaxes(rev, ded, cre)
+	fmt.Println(final)
 
 }
 
@@ -54,33 +54,30 @@ Taxes Calculated!
       5528.7
 [Finished in 0.453s]*/
 
-
-
-
 //--------------------------------------------------------------------------------
- //package main
+//package main
 //import "fmt"
 
 func queryDatabase(query string) string {
-  var result string
-  connectDatabase()
-  // Add deferred call to disconnectDatabase() here
-  defer disconnectDatabase()
-  if query == "SELECT * FROM coolTable;" {
-    result = "NAME|DOB\nVincent Van Gogh|March 30, 1853"
-  }
-  fmt.Println(result)
-  return result
+	var result string
+	connectDatabase()
+	// Add deferred call to disconnectDatabase() here
+	defer disconnectDatabase()
+	if query == "SELECT * FROM coolTable;" {
+		result = "NAME|DOB\nVincent Van Gogh|March 30, 1853"
+	}
+	fmt.Println(result)
+	return result
 }
 
 func connectDatabase() {
-  fmt.Println("Connecting to the database.")
+	fmt.Println("Connecting to the database.")
 }
 
 func disconnectDatabase() {
-  fmt.Println("Disconnecting from the database.")
+	fmt.Println("Disconnecting from the database.")
 }
 
 func main2() {
-  queryDatabase("SELECT * FROM coolTable;")
+	queryDatabase("SELECT * FROM coolTable;")
 }

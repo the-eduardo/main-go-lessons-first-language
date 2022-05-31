@@ -1,17 +1,21 @@
 package main
-import ("fmt"
-  "runtime")
+
+import (
+	"fmt"
+	"runtime"
+)
 
 func main() {
-  s := "hello world!"
-  sb := []byte(s)
-  for _, v := range sb {
-    fmt.Printf("%v | %b | %T | %#U | %#x\n", v, v, v, v, v)
-  }
-  a := 78745
-  fmt.Printf("\n\n\n %d \t %b \t %#x", a ,a ,a )
-  fmt.Println("\n", runtime.GOOS, "|", runtime.GOARCH)
+	s := "hello world!"
+	sb := []byte(s)
+	for _, v := range sb {
+		fmt.Printf("%v | %b | %T | %#U | %#x\n", v, v, v, v, v)
+	}
+	a := 78745
+	fmt.Printf("\n\n\n %d \t %b \t %#x", a, a, a)
+	fmt.Println("\n", runtime.GOOS, "|", runtime.GOARCH)
 }
+
 /* https://pkg.go.dev/fmt
 Integer:
 

@@ -2,17 +2,17 @@ package main
 
 import "fmt"
 
-func addHundred (numPtr *int) {
-  *numPtr += 100
+func addHundred(numPtr *int) {
+	*numPtr += 100
 }
 
 func main() {
-  x := 1
-  addHundred(&x)
-  fmt.Println(x)
-  fmt.Println("****************")
+	x := 1
+	addHundred(&x)
+	fmt.Println(x)
+	fmt.Println("****************")
 
-  main2()
+	main2()
 }
 
 /* // TODO:
@@ -27,8 +27,8 @@ func brainwash(saying *string) {
 
 func main2() {
 	greeting := "Hello there!"
-  fmt.Println(greeting)
-  fmt.Println("***brainwash working***")
+	fmt.Println(greeting)
+	fmt.Println("***brainwash working***")
 	// Call:
 	brainwash(&greeting)
 

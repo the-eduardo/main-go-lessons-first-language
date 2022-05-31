@@ -4,9 +4,11 @@
 // if even /2
 
 package main
+
 import "fmt"
+
 func main() {
-  var sum uint64
+	var sum uint64
 	for sum = 27; sum > 1; {
 		if sum&1 != 0 {
 			sum = sum*3 + 1
