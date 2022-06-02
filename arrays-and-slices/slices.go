@@ -13,8 +13,8 @@ func main() {
 	//slice[4] = "melancia"
 	slice = append(slice, "melancia")
 
-	for _, valor := range slice {
-		fmt.Printf("Um dos valores desse slice é %v.\n", valor)
+	for a, valor := range slice {
+		fmt.Printf("Um valor é %v (%v). \n", valor, a)
 	}
   dois()
 }
