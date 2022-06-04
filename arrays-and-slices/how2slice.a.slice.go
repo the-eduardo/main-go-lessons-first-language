@@ -12,4 +12,14 @@ func main() {
   }
   aaa = append(aaa[1:3], aaa[6:]...)
   fmt.Println(aaa)
+  fmt.Println(aaa[:], "\n\n----------------------")
+  sec()
+}
+
+func sec(){
+  sa:=[]int{1,2,3,4,5}
+  sb:=[]int{10,11,12,23}
+  sc:=append(sa, 6,7,8,9)
+  sc =append(sc, sb...)
+  fmt.Println("\n", sc)
 }
