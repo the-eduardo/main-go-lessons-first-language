@@ -10,7 +10,11 @@ import "fmt"
 func main() {
 	o, e := 0, 0
 	var sum uint64
-	fmt.Scan(&sum)
+	_, err := fmt.Scan(&sum)
+	if err != nil {
+		fmt.Println("Error: ", err)
+		return
+	}
 	for sum > 1 {
 		if sum&1 != 0 {
 			o++
