@@ -37,6 +37,7 @@ func mape() {
 	pessoas["ervilha"] = pessoa{"tomás", "segundo", []string{"abacate", "pera", "maçã"}}
 	//fmt.Println(pessoas)
 	for _, valor := range pessoas {
+		fmt.Println("")
 		fmt.Println("Meu nome é", valor.nome, valor.sobrenome, "e meus sorvetes favoritos são:")
 		for _, valor := range valor.sorvete {
 			fmt.Println("–", valor)
