@@ -52,5 +52,9 @@ func main() {
 	oi(p)
 	oi(s)
 	oi(b)
+	fmt.Println("------------------------------------------------------")
+	b.Greetings()
+	p.Greetings()
+	s.Greetings()
 
 }
