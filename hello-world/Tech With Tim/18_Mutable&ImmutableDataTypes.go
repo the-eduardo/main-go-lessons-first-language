@@ -4,13 +4,13 @@ import "fmt"
 
 func main() {
 	func() {
-		var x int = 5
+		var x = 5
 		y := &x
 		*y = 10
 		fmt.Println("With Pointers: x =", x, "| y =", *y)
 	}()
 	func() {
-		var x int = 5
+		var x = 5
 		y := x
 		y = 10
 		fmt.Println("W.No Pointers: x =", x, "| y =", y)
